@@ -1,0 +1,7 @@
+C:\Users\Michael\Desktop\Survival\SurvivalV1\SurvivalV1\bin\Debug\SurvivalV1.exe.config
+C:\Users\Michael\Desktop\Survival\SurvivalV1\SurvivalV1\bin\Debug\SurvivalV1.exe
+C:\Users\Michael\Desktop\Survival\SurvivalV1\SurvivalV1\bin\Debug\SurvivalV1.pdb
+C:\Users\Michael\Desktop\Survival\SurvivalV1\SurvivalV1\obj\Debug\SurvivalV1.csprojResolveAssemblyReference.cache
+C:\Users\Michael\Desktop\Survival\SurvivalV1\SurvivalV1\obj\Debug\SurvivalV1.csproj.CoreCompileInputs.cache
+C:\Users\Michael\Desktop\Survival\SurvivalV1\SurvivalV1\obj\Debug\SurvivalV1.exe
+C:\Users\Michael\Desktop\Survival\SurvivalV1\SurvivalV1\obj\Debug\SurvivalV1.pdb
