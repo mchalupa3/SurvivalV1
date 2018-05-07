@@ -5,3 +5,10 @@ C:\Users\Michael\Desktop\Survival\SurvivalV1\SurvivalV1\obj\Debug\SurvivalV1.csp
 C:\Users\Michael\Desktop\Survival\SurvivalV1\SurvivalV1\obj\Debug\SurvivalV1.csproj.CoreCompileInputs.cache
 C:\Users\Michael\Desktop\Survival\SurvivalV1\SurvivalV1\obj\Debug\SurvivalV1.exe
 C:\Users\Michael\Desktop\Survival\SurvivalV1\SurvivalV1\obj\Debug\SurvivalV1.pdb
+C:\Users\mchal\Desktop\C#\SurvivalV1\SurvivalV1\bin\Debug\SurvivalV1.exe.config
+C:\Users\mchal\Desktop\C#\SurvivalV1\SurvivalV1\bin\Debug\SurvivalV1.exe
+C:\Users\mchal\Desktop\C#\SurvivalV1\SurvivalV1\bin\Debug\SurvivalV1.pdb
+C:\Users\mchal\Desktop\C#\SurvivalV1\SurvivalV1\obj\Debug\SurvivalV1.csprojResolveAssemblyReference.cache
+C:\Users\mchal\Desktop\C#\SurvivalV1\SurvivalV1\obj\Debug\SurvivalV1.csproj.CoreCompileInputs.cache
+C:\Users\mchal\Desktop\C#\SurvivalV1\SurvivalV1\obj\Debug\SurvivalV1.exe
+C:\Users\mchal\Desktop\C#\SurvivalV1\SurvivalV1\obj\Debug\SurvivalV1.pdb
