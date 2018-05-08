@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace SurvivalV1
 {
@@ -29,22 +30,35 @@ namespace SurvivalV1
             Console.WriteLine("Type *commands* to get a list of commands.");
             while (continueGame == true)
             {
-                userFood = 100;
+                userFood = 50;
                 userWater = 100;
                 userHealth = 100;
                 while (userHealth > 0 && userFood > 0 && userWater > 0)
                 {
-                    input = Console.ReadLine();
-                    input = input.ToLower();
-                    // INterperet here
-                    if (input == "commands")
-                        commands();
-                    if (input == "inventory")
+
+
+
+
+                    while (continueGame == true)
                     {
-                        inventory();
+
+
+                        input = Console.ReadLine();
+                        input = input.ToLower();
+                        if (input == "commands")
+                            commands();
+                        if (input == "inventory")
+                        {
+                            inventory();
+                        }
+                        if (input == "drink water")
+                            drinkWater();
+                        if (input == "vitals")
+                            vitals();
+                        if (input == "eat")
+                            eat();
                     }
-                    if (input == "drink water")
-                        drinkWater();
+                    
 
                 }
 
@@ -71,12 +85,57 @@ namespace SurvivalV1
         }
 
         public static void drinkWater()
+        {
+            if (waterBottles == 0)
+                Console.WriteLine("You have no water left!");
+            else
             {
-            userWater = userWater + 15;
-            waterBottles--;
-            Console.WriteLine("You have " + waterBottles + "left.  Your water was raised to " + userWater);
+                if (userWater >= 100)
+                {
+                    Console.WriteLine("Your water level is full.");
+                }
+                else
+                {
+                    waterBottles = waterBottles - 1;
+                    userWater = userWater + 10;
+                    Console.WriteLine("Your water level was increased to " + userWater + "and you have " + waterBottles + "water bottles left.");
 
+                }
             }
+
+
+        }
+        public static void death()
+        {
+            userFood = userFood - 3;
+            userWater = userWater - 3;
+        }
+
+        public static void vitals()
+        {
+            Console.WriteLine("Water level: " + userWater);
+            Console.WriteLine("Food level: "+ userFood);
+        }
+
+        public static void eat()
+        {
+            if(food == 0)
+                Console.WriteLine("You have no food left!");
+            else
+            {
+                if(userFood >= 100)
+                {
+                    Console.WriteLine("Your food level is full.");
+                }
+                else
+                {
+                    food = food - 1;
+                    userFood = userFood + 7;
+                    Console.WriteLine("Your food level was increased to " + userFood + "and you have " + food + "food left.");
+
+                }
+            }
+        }
 
 
 
