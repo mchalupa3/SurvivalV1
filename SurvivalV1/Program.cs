@@ -10,12 +10,12 @@ namespace SurvivalV1
     class Program
     {
 
-        static double userWater;
+        static int userWater;
         static int waterBottles;
-        static double userFood;
+        static int userFood;
         static int food;
         static bool continueGame = true;
-        static double userHealth;
+        static int userHealth;
         static int userWood;
         static Random rnd = new Random();
         static bool woodenAxe = false;
@@ -63,7 +63,7 @@ namespace SurvivalV1
                         death();
                     if (input == "build")
                         build();
-                    if (input == "gather wood")
+                    if (input == "chop wood")
                         gatherWood();
                     if (input == "clear")
                         consoleClear();
@@ -88,7 +88,7 @@ namespace SurvivalV1
         }
         public static void commands() //lists commands 
         {
-            Console.WriteLine("To view your inventory: inventory                           To get wood: gather wood");
+            Console.WriteLine("To view your inventory: inventory                           To get wood: chop wood");
             Console.WriteLine("To check your vitals: vitals                                To get more water: collect water");
             Console.WriteLine("To check the time: time                                     To clear the console: clear");
             Console.WriteLine("To eat food: eat");
@@ -252,9 +252,8 @@ namespace SurvivalV1
             try
             {
                 StreamWriter sw = new StreamWriter(@"C:\Users\mchal\Desktop\test.txt");
-                sw.WriteLine(userFood);
-
                 sw.WriteLine(userWater);
+                sw.WriteLine(userFood);
                 sw.WriteLine(userHealth);
                 sw.WriteLine(food);
                 sw.WriteLine(waterBottles);
@@ -278,18 +277,14 @@ namespace SurvivalV1
         public static void loadGame()
         {
             StreamReader sr = new StreamReader(@"C:\Users\mchal\Desktop\test.txt");
-
             userWater = Convert.ToInt32(sr.ReadLine());
             userFood = Convert.ToInt32(sr.ReadLine());
             userHealth = Convert.ToInt32(sr.ReadLine());
             food = Convert.ToInt32(sr.ReadLine());
             waterBottles = Convert.ToInt32(sr.ReadLine());
             userWood = Convert.ToInt32(sr.ReadLine());
-            userWater = Convert.ToInt32(sr.ReadLine());          
             sr.Close();
-            Console.WriteLine(userFood);
-            Console.WriteLine(userWater);
-            Console.WriteLine(userHealth);
+      
         }
         
 
